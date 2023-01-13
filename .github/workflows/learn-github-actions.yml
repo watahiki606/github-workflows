@@ -6,7 +6,7 @@ on:
 jobs:
   check-bats-version:
     env:  
-        USER_NODE_ID: ${{ github.event.pull_request.user.node_id }}  
+        USER_NODE_ID: ${{ github.actor}}  
 
     runs-on: ubuntu-latest
     steps:
